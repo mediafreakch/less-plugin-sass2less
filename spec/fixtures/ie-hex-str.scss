@@ -1,0 +1,3 @@
+@mixin gradient-ie($startColor: #555, $endColor: #333){
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str( $startColor)}', endColorstr='#{ie-hex-str( $endColor)}', GradientType=1);
+}

@@ -1,0 +1,8 @@
+$shade: mix(#000000, #bbb, 10%);
+$tint: mix(#ffffff, #bbb, 10%);
+// $nexted: mix(#000000, tint($black, 24%), 10%);
+
+@mixin gradient-vertical($startColor: #555, $endColor: #333){
+
+}
+@include gradient-vertical(mix(#000000, $yellow, 80%), mix(#ffffff, $yellow, 70%));
