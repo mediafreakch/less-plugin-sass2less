@@ -1,3 +1,7 @@
 @mixin border-radius($size){
   border-radius: $size;
 }
+
+@mixin border-radius {
+  color: red;
+}
