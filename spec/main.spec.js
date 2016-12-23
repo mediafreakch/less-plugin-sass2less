@@ -1,7 +1,20 @@
 // require dependencies
 var fs = require('fs')
 var path = require('path')
+var Reporter = require('jasmine-spec-reporter')
 var Converter = require(path.resolve(__dirname, '../lib'))
+
+// register custom reporter
+var reporter = new Reporter({
+  displayStacktrace: 'none',      // display stacktrace for each failed assertion, values: (all|specs|summary|none)
+  displaySuccessesSummary: true, // display summary of all successes after execution
+  displayFailuresSummary: false,   // display summary of all failures after execution
+  displaySuccessfulSpec: true,    // display each successful spec
+  displayFailedSpec: true        // display each failed spec
+})
+
+jasmine.getEnv().clearReporters()
+jasmine.getEnv().addReporter(reporter);
 
 describe('SCSS to LESS converter', function() {
   let fixtures, converter

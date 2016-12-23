@@ -4,7 +4,7 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine"
   },
   "author": "mediafreakch",
   "license": "MIT",
@@ -13,6 +13,7 @@
     "lodash": "^4.17.2"
   },
   "devDependencies": {
-    "jasmine": "^2.5.2"
+    "jasmine": "^2.5.2",
+    "jasmine-spec-reporter": "^2.7.0"
   }
 }
