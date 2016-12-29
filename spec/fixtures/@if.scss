@@ -1,0 +1,9 @@
+$isActive: false;
+
+@if $isActive {
+  $color: 'red';
+}
+
+button {
+  color: $color;
+}

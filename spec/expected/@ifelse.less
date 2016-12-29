@@ -1,0 +1,13 @@
+@isActive: false;
+
+.if() when (@isActive) {
+  @color: 'red';
+}
+.if() when not (@isActive) {
+  @color: 'green';
+}
+.if();
+
+button {
+  color: @color;
+}
