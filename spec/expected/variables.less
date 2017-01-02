@@ -1,5 +1,5 @@
 // Do not convert native css method
-@import 'variables.less';
+@import 'variables.css';
 @media (max-width: 380px) {
 
 }
@@ -8,9 +8,9 @@
  opacity: 1;
 }
 
-@-webkit-keyframes fadein { .fadeIn; }
-@-moz-keyframes fadein { .fadeIn; }
-@keyframes fadein { .fadeIn; }
+@-webkit-keyframes fadein { &:extend(.fadeIn); }
+@-moz-keyframes fadein { &:extend(.fadeIn); }
+@keyframes fadein { &:extend(.fadeIn); }
 
 @font-face {
   font-family: 'Open Sans';
