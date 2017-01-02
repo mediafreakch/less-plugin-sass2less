@@ -4,6 +4,10 @@ $isActive: false;
   $color: 'red';
 }
 
+@if $is-false == false {
+  $foo: 'bar';
+}
+
 button {
   color: $color;
 }

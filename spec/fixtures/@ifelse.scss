@@ -6,6 +6,12 @@ $isActive: false;
   $color: 'green';
 }
 
+@if (5 >= 1) {
+  $foo: 'bar';
+} @else {
+  $bar: 'foo';
+}
+
 button {
   color: $color;
 }

@@ -8,6 +8,14 @@
 }
 .if();
 
+.if() when ((5 >= 1)) {
+  @foo: 'bar';
+}
+.if() when not ((5 >= 1)) {
+  @bar: 'foo';
+}
+.if();
+
 button {
   color: @color;
 }

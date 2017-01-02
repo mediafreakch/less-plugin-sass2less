@@ -5,6 +5,11 @@
 }
 .if();
 
+.if() when (@is-false = false) {
+  @foo: 'bar';
+}
+.if();
+
 button {
   color: @color;
 }
