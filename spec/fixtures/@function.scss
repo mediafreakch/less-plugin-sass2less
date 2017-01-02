@@ -1,0 +1,5 @@
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+$spinner-duration: 360 * $spinner-arc-time / (strip-units($spinner-arc-start-rot + (360deg - $spinner-arc-size)));
