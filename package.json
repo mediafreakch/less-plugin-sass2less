@@ -15,5 +15,8 @@
   "devDependencies": {
     "jasmine": "^2.5.2",
     "jasmine-spec-reporter": "^2.7.0"
+  },
+  "peerDependencies": {
+    "less-plugin-functions": "^0.0.2"
   }
 }
