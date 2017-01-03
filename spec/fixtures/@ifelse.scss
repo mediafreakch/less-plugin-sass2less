@@ -12,6 +12,22 @@ $isActive: false;
   $bar: 'foo';
 }
 
+@if $isActive == false {
+  html, body {
+    font-size: 14px;
+  }
+} @else {
+ html, body {
+    font-size: 10px;
+  }
+}
+
 button {
   color: $color;
+
+  @if $isActive {
+    font-size: 14px;
+  } @else {
+    font-size: 10px;
+  }
 }

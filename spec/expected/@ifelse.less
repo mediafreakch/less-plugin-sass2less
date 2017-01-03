@@ -1,21 +1,37 @@
 @isActive: false;
 
-.if() when (@isActive) {
+& when (@isActive) {
   @color: 'red';
 }
-.if() when not (@isActive) {
+& when not (@isActive) {
   @color: 'green';
 }
-.if();
 
-.if() when ((5 >= 1)) {
+& when ((5 >= 1)) {
   @foo: 'bar';
 }
-.if() when not ((5 >= 1)) {
+& when not ((5 >= 1)) {
   @bar: 'foo';
 }
-.if();
+
+& when (@isActive = false) {
+  html, body {
+    font-size: 14px;
+  }
+}
+& when not (@isActive = false) {
+ html, body {
+    font-size: 10px;
+  }
+}
 
 button {
   color: @color;
+
+  & when (@isActive) {
+    font-size: 14px;
+  }
+& when not (@isActive) {
+    font-size: 10px;
+  }
 }
