@@ -1,6 +1,5 @@
 $color: '#000';
 
-$fade: rgba(#000, 0.4);
-$also: rgba(#{$color}, 0.4);
-$heavy: unquote("rgba(#{$color}, 0.87)");
-$not: rgba(0,0,0,0.4);
+$convert: rgba(#000, 0.4);
+$not: unquote("rgba(#{$color}, 0.87)");
+$nope: rgba(0,0,0,0.4);
