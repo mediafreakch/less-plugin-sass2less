@@ -1,15 +1,23 @@
 @isActive: false;
 
-.if() when (@isActive) {
+& when (@isActive) {
   @color: 'red';
 }
-.if();
 
-.if() when (@is-false = false) {
+& when (@isActive = false) {
   @foo: 'bar';
 }
-.if();
+
+& when ((@isActive = false)) {
+  html, body {
+    font-size: 14px;
+  }
+}
 
 button {
   color: @color;
+
+  & when (@isActive) {
+    font-size: 13px;
+  }
 }
