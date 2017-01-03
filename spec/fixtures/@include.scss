@@ -1,5 +1,5 @@
-@mixin border-radius($size){
-  border-radius: $size;
-}
-
+@include typo-display-3;
 @include border-radius(5px);
+@include typo-display-3($colorContrast: true);
+// @include
+/* @include */
