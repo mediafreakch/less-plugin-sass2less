@@ -1,6 +1,6 @@
 @color: '#000';
 
-@fade: fade(#000, (0.4*100));
-@also: fade(@{color}, (0.4*100));
-@heavy: ~"fade(@{color}, (0.87*100))";
+@fade: rgba(#000, 0.4);
+@also: rgba(@{color}, 0.4);
+@heavy: ~"rgba(@{color}, 0.87)";
 @not: rgba(0,0,0,0.4);
