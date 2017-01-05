@@ -1,0 +1,8 @@
+$layout-drawer-width: 240px !default;
+$layout-header-desktop-baseline: 500;
+$layout-tab-desktop-padding: 200;
+.bar {
+    width: calc(100% - #{$layout-drawer-width});
+    height: calc(100% -
+        #{(($layout-header-desktop-baseline - $layout-tab-desktop-padding) * 2)});
+}
