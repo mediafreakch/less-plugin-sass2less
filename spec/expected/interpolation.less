@@ -1,5 +1,8 @@
 @dir: 'dir';
 @filepath: 'filepath';
+@size: 50;
+@columns: 2;
 .loader-default {
   background: url("@{dir}/@{filepath}");
+  width: ((@size / @columns) * 100)~"%";
 }
