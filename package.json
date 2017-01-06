@@ -7,7 +7,7 @@
     "sass2less": "./bin/cmd.js"
   },
   "scripts": {
-    "test": "jasmine"
+    "test": "istanbul cover node_modules/jasmine/bin/jasmine.js"
   },
   "author": "mediafreakch",
   "dependencies": {
@@ -16,6 +16,7 @@
     "mkdirp": "^0.5.1"
   },
   "devDependencies": {
+    "istanbul": "^0.4.5",
     "jasmine": "^2.5.2",
     "jasmine-spec-reporter": "^2.7.0"
   },
