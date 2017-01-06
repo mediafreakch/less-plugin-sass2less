@@ -12,7 +12,8 @@
   "author": "mediafreakch",
   "dependencies": {
     "cli": "^1.0.1",
-    "lodash": "^4.17.2"
+    "lodash": "^4.17.2",
+    "mkdirp": "^0.5.1"
   },
   "devDependencies": {
     "jasmine": "^2.5.2",
