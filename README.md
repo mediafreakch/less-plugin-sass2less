@@ -1,5 +1,7 @@
 # less-plugin-sass2less
 
+[![Build Status](https://travis-ci.org/mediafreakch/less-plugin-sass2less.svg?branch=master)](https://travis-ci.org/mediafreakch/less-plugin-sass2less) [![Node version](https://img.shields.io/node/v/less-plugin-sass2less.svg?style=flat)](http://nodejs.org/download/)
+
 Want to use a UI library written in SASS, re-use it's mixins and variables but your entire source code is written in LESS? Sass2Less to the rescue! You can either use the `sass2less` command line utility included in this package or use it as a less-plugin and import `.scss` files into `.less` on-the-fly!
 
 ## Get it
