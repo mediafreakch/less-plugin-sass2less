@@ -84,6 +84,7 @@ Available destination-pattern keys includes all the keys returned by `path.parse
 
 ## Supported conversions
 
+- `@for`
 - `@extend`
 - `@function` becomes `.function();`
 - `@if`, and `@else`
@@ -105,6 +106,5 @@ There are certain things that work in both compilers and do not need explicit co
 ## Known issues
 
 - **`@elseif` clauses** Not supported
-- **`@for` loops** Not supported
 - **`!default` attributes** Variables with the same name will not be ignored like in SASS. The most recent takes precedence over the previous one.
 - **`@import` statements** Importing a file as `@import "file.scss"` whereas the physical file is actually named `_file.scss` is supported, but it comes at a cost. LESS errors in those files will simply result in the file not being compiled.
