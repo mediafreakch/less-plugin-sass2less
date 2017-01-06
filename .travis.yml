@@ -2,3 +2,6 @@ language: node_js
 node_js:
   - 6
   - node
+after_success:
+  - npm install -g coveralls
+  - coveralls < ./coverage/lcov.info
