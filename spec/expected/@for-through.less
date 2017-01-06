@@ -1,0 +1,23 @@
+@grid-tablet-columns: 4;
+
+.for(@i: 1) when (@i <= (@grid-tablet-columns - 1)) {
+  .mdl-cell--@{i}-offset,
+  .mdl-cell--@{i}-offset-tablet.mdl-cell--@{i}-offset-tablet {
+    .offset-size(@i, @grid-tablet-columns);
+  }
+  .for((@i + 1));
+}
+.for();
+
+.for(@i: 1) when (@i < (@grid-tablet-columns)) {
+  .mdl-cell--@{i}-offset,
+  .mdl-cell--@{i}-offset-tablet.mdl-cell--@{i}-offset-tablet {
+    .offset-size(@i, @grid-tablet-columns);
+  }
+  .for((@i + 1));
+}
+.for();
+
+.bar {
+  content: "rows: @{grid-tablet-columns}"
+}

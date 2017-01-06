@@ -1,0 +1,19 @@
+$grid-tablet-columns: 4;
+
+@for $i from 1 through ($grid-tablet-columns - 1) {
+  .mdl-cell--#{$i}-offset,
+  .mdl-cell--#{$i}-offset-tablet.mdl-cell--#{$i}-offset-tablet {
+    @include offset-size($i, $grid-tablet-columns);
+  }
+}
+
+@for $i from 1 to ($grid-tablet-columns) {
+  .mdl-cell--#{$i}-offset,
+  .mdl-cell--#{$i}-offset-tablet.mdl-cell--#{$i}-offset-tablet {
+    @include offset-size($i, $grid-tablet-columns);
+  }
+}
+
+.bar {
+  content: "rows: #{$grid-tablet-columns}"
+}
