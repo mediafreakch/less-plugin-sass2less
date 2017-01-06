@@ -4,7 +4,7 @@
   "description": "A plugin for less that converts SASS files into LESS. It comes with a cmd utility too.",
   "main": "lib/plugin.js",
   "bin": {
-    "sass2less": "./lib/cmd.js"
+    "sass2less": "./bin/cmd.js"
   },
   "scripts": {
     "test": "jasmine"

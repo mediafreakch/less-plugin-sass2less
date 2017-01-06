@@ -2,7 +2,7 @@
 let cli = require('cli')
 let fs = require('fs')
 let mkdirp = require('mkdirp')
-let sass2less = require('./')
+let sass2less = require('../lib')
 let path = require('path')
 
 const PATTERN_KEYS = Object.keys(path.parse(''))
