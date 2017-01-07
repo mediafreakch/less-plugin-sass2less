@@ -7,6 +7,7 @@ after_success:
 - coveralls < ./coverage/lcov.info
 deploy:
   provider: npm
+  email: info@mediafreak.ch
   api_key:
     secure: JlhjBLksta1jv0u+D8nZWO92UNyrm1eFlUj9SHKdvZ2eiXXM5j1X4ow00eMGlGt3F7GGUnNLbun5KkLVGWGHGnXSs44shkcxANEB94N8m6Grk8UGnFaQo70+aaXMjReptELk15E4RMX9TkQxOS7hczk65e2+NT41xjb5JhcB0RZ0MWaVFV9Ja1zzRN5QKN5JuBQBvv9YKewRoYFfKHZFwBIU0a2ayiaX4x/7PRcES5N+itBN8K0KuN2VCgwJYNEEOmI16iC/QJlkuxxoq52Z17GUETT5FLuxBZXaH+ho4c2RDG0MU3Kskhaw7K/+s9VxUm2e/KdHpWCwK5O9773aIkJ0/4BErKLArXAni09a+u3iSXw3wL/qps8NhqHyjqHQPyfFjR3m5C7o33dCtO0KV2cCMP1Y0df+q32eKU1ucWEhFEo4303QdrNmdbFGjScUG8A32Vt3bdC/eoqDMVQGOpIX9ZUG4Ukb/bnCs6Xz/sFoVMeia5MQchXu8HcQwdXx9hskLtTbGeeuJqZ6plqzlREvr1WZfKWo8WKAbeFFzsuTaUm+sLMyrH+KBWCGXVlHfm2+N3q8F3q9LI9QSrrXBbYATtWFyv1MMwt2Yx5Fnms5aO3wfJvKQSG0pI2puI+3B6uxvSHZ+bA2toi3ESJRt8fB20oJ+ZSLtm2AP/DN7Zk=
   on:
