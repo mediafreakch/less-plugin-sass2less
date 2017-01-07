@@ -1,5 +1,6 @@
 @color: '#000';
 
 @convert: fade(#000, (0.4*100));
-@not: ~"rgba(@{color}, 0.87)";
+@thistoo: fade(@color, (0.4*100));
+@not: ~"rgba(@{color}, 0.87)"; // covers rgb "0,0,0"
 @nope: rgba(0,0,0,0.4);

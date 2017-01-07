@@ -1,5 +1,6 @@
 $color: '#000';
 
 $convert: rgba(#000, 0.4);
-$not: unquote("rgba(#{$color}, 0.87)");
+$thistoo: rgba($color,0.4);
+$not: unquote("rgba(#{$color}, 0.87)"); // covers rgb "0,0,0"
 $nope: rgba(0,0,0,0.4);
