@@ -42,14 +42,14 @@ let file
 fs.readFile('main.less', 'utf-8', function(err, contents) {
   if(err) return console.log(err)
   file = contents
-})
 
-less.render(file, {
-  plugins: [sass2less]
-}).then(function(output) {
-  console.log(output.css)
-}, function (error) {
-  console.log(error)
+  less.render(file, {
+    plugins: [sass2less]
+  }).then(function(output) {
+    console.log(output.css)
+  }, function (error) {
+    console.log(error)
+  })
 })
 ```
 
