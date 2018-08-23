@@ -5,3 +5,15 @@
   @extend .error;
   border-width: 3px;
 }
+p {
+  color: #f00;
+}
+.p {
+  @extend p;
+}
+.som3-thing {
+  color: #0f0;
+}
+.somet1ing-else {
+  @extend .som3-thing
+}
